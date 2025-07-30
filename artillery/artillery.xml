@@ -7,23 +7,26 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://hub.docker.com/r/obviousviking/artillery/</Support>
-  <Project/>
+  <Support>https://github.com/ObviousViking/Artillery/issues</Support>
+  <Project>https://github.com/ObviousViking/Artillery</Project>
   <Overview>Artillery is a simple web-ui for gallery-dl. It helps less experienced users easily set tasks and download the art they want. This is still a work in progress so bugs are likely</Overview>
   <Category>Downloaders:</Category>
-  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
+  <WebUI>http://[IP]:[PORT:8088]/</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/ObviousViking/Artillery/refs/heads/main/logo.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1753645321</DateInstalled>
+  <DateInstalled>1753880859</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="WebUI" Target="8080" Default="8666" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8666</Config>
-  <Config Name="config" Target="/config" Default="" Mode="rw" Description="The location of the global gallery-dl config file" Type="Path" Display="always" Required="true" Mask="false"/>
-  <Config Name="downloads" Target="/downloads" Default="" Mode="rw" Description="This is where your downloaded media will be stored" Type="Path" Display="always" Required="true" Mask="false"/>
-  <Config Name="tasks" Target="/tasks" Default="" Mode="rw" Description="This location will store your scheduled tasks" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Container Port 1" Target="80" Default="8088" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8088</Config>
+  <Config Name="config" Target="/config" Default="" Mode="rw" Description="The location of the global gallery-dl config file" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/artillery/config</Config>
+  <Config Name="downloads" Target="/downloads" Default="" Mode="rw" Description="This is where your downloaded media will be stored" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/artillery/downloads</Config>
+  <Config Name="tasks" Target="/tasks" Default="" Mode="rw" Description="This location will store your scheduled tasks" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/artillery/tasks</Config>
+  <Config Name="logs" Target="/logs" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/artillery/logs</Config>
+  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
   <TailscaleStateDir/>
 </Container>
