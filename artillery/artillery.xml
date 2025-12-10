@@ -25,7 +25,6 @@
   <Config Name="config" Target="/config" Default="" Mode="rw" Description="The location of the global gallery-dl config file" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/artillery/config</Config>
   <Config Name="downloads" Target="/downloads" Default="" Mode="rw" Description="This is where your downloaded media will be stored" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/artillery/downloads</Config>
   <Config Name="tasks" Target="/tasks" Default="" Mode="rw" Description="This location will store your scheduled tasks" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/artillery/tasks</Config>
-  <Config Name="logs" Target="/logs" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/artillery/logs</Config>
   <Config Name="PUID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
   <TailscaleStateDir/>
