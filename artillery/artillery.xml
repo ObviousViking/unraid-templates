@@ -21,7 +21,7 @@
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="Container Port 1" Target="5000" Default="8088" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8088</Config>
+  <Config Name="Container Port 1" Target="80" Default="8088" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8088</Config>
   <Config Name="config" Target="/config" Default="" Mode="rw" Description="The location of the global gallery-dl config file" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/artillery/config</Config>
   <Config Name="downloads" Target="/downloads" Default="" Mode="rw" Description="This is where your downloaded media will be stored" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/artillery/downloads</Config>
   <Config Name="tasks" Target="/tasks" Default="" Mode="rw" Description="This location will store your scheduled tasks" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/artillery/tasks</Config>
